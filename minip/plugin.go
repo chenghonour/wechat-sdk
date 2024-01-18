@@ -3,8 +3,8 @@ package minip
 import (
 	"encoding/json"
 
-	"github.com/shenghui0779/gochat/urls"
-	"github.com/shenghui0779/gochat/wx"
+	"github.com/chenghonour/wechat-sdk/urls"
+	"github.com/chenghonour/wechat-sdk/wx"
 )
 
 // PluginAction defines for plugin action params

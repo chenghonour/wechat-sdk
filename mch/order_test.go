@@ -8,8 +8,8 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shenghui0779/gochat/mock"
-	"github.com/shenghui0779/gochat/wx"
+	"github.com/chenghonour/wechat-sdk/mock"
+	"github.com/chenghonour/wechat-sdk/wx"
 )
 
 func TestUnifyOrder(t *testing.T) {

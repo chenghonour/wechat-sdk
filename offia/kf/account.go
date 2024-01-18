@@ -6,8 +6,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/shenghui0779/gochat/urls"
-	"github.com/shenghui0779/gochat/wx"
+	"github.com/chenghonour/wechat-sdk/urls"
+	"github.com/chenghonour/wechat-sdk/wx"
 )
 
 // InviteStatus 客服邀请状态

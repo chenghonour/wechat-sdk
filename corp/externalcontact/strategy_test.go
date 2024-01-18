@@ -8,8 +8,8 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shenghui0779/gochat/corp"
-	"github.com/shenghui0779/gochat/mock"
+	"github.com/chenghonour/wechat-sdk/corp"
+	"github.com/chenghonour/wechat-sdk/mock"
 )
 
 func TestListCustomerStrategy(t *testing.T) {

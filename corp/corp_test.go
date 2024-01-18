@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/chenghonour/wechat-sdk/mock"
 	"github.com/golang/mock/gomock"
-	"github.com/shenghui0779/gochat/mock"
 	"github.com/stretchr/testify/assert"
 )
 

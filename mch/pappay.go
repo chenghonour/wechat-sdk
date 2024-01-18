@@ -3,8 +3,8 @@ package mch
 import (
 	"strconv"
 
-	"github.com/shenghui0779/gochat/urls"
-	"github.com/shenghui0779/gochat/wx"
+	"github.com/chenghonour/wechat-sdk/urls"
+	"github.com/chenghonour/wechat-sdk/wx"
 )
 
 // ParamsContract 纯签约协议参数
