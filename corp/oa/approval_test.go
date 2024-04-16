@@ -169,18 +169,20 @@ func TestApplyEvent(t *testing.T) {
 		TemplateID:          "3Tka1eD6v6JfzhDMqPd3aMkFdxqtJMc2ZRioeFXkaaa",
 		UseTemplateApprover: 0,
 		ChooseDepartment:    2,
-		Approver: []*Approver{
-			{
-				Attr:   2,
-				UserID: []string{"WuJunJie", "WangXiaoMing"},
-			},
-			{
-				Attr:   1,
-				UserID: []string{"LiuXiaoGang"},
+		Process: Process{
+			NodeList: []NodeList{
+				{
+					Type:   1,
+					ApvRel: 1,
+					Userid: []string{"WuJunJie", "WangXiaoMing"},
+				},
+				{
+					Type:   2,
+					ApvRel: 2,
+					Userid: []string{"LiuXiaoGang"},
+				},
 			},
 		},
-		Notifyer:   []string{"WuJunJie", "WangXiaoMing"},
-		NotifyType: 1,
 		ApplyData: &ApplyData{
 			Contents: []*ApplyContent{
 				{
