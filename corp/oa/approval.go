@@ -55,11 +55,19 @@ type ParamsApplyEvent struct {
 	TemplateID          string              `json:"template_id"`
 	UseTemplateApprover int                 `json:"use_template_approver"`
 	ChooseDepartment    int64               `json:"choose_department,omitempty"`
-	Approver            []*Approver         `json:"approver"`
-	Notifyer            []string            `json:"notifyer"`
-	NotifyType          int                 `json:"notify_type"`
+	Process             Process             `json:"process"`
 	ApplyData           *ApplyData          `json:"apply_data"`
 	SummaryList         []*ApplySummaryInfo `json:"summary_list"`
+}
+
+type Process struct {
+	NodeList []NodeList `json:"node_list"`
+}
+
+type NodeList struct {
+	Type   int      `json:"type"`
+	ApvRel int      `json:"apv_rel"`
+	Userid []string `json:"userid"`
 }
 
 type ResultApplyEvent struct {
